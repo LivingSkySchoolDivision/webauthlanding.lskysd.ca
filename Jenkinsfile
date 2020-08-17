@@ -9,7 +9,7 @@ pipeline {
         stage('Git clone') {
             steps {
                 git branch: 'master',
-                    url: "https://sourcecode.lskysd.ca/PublicCode/webauthlanding.lskysd.ca.git"
+                    url: "https://github.com/LivingSkySchoolDivision/webauthlanding.lskysd.ca.git"
             }
         }
         stage('Docker build') {
